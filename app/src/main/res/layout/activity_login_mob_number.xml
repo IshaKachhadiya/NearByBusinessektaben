@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ic_app_bg"
+    tools:context=".ui.main.view.Login.LoginMobNumberActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:fontFamily="@font/dm_bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_14ssp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="Login Now !"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="@color/colorBlack"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:fontFamily="@font/dm_regular"
+            android:textColor="@color/colorAppLight"
+            android:textSize="@dimen/_11ssp"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/_40sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Enter your phone number to verify your account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtCountry"
+            android:background="@drawable/ic_et_bg"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:textColorHint="@color/colorBlack"
+            android:fontFamily="@font/dm_medium"
+            android:hint="(+91) India"
+            android:drawableRight="@drawable/ic_dropdown"
+            android:drawablePadding="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:inputType="number"
+            android:textCursorDrawable="@drawable/ic_cursoor_color"
+            android:id="@+id/txt_mob"
+            android:background="@drawable/ic_et_bg"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:textColorHint="@color/colorAppLight"
+            android:fontFamily="@font/dm_medium"
+            android:textColor="@color/colorBlack"
+            android:hint="Enter Mobile Number"
+            android:drawablePadding="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txt_get_otp"
+            android:background="@drawable/ic_et_bg"
+            android:backgroundTint="@color/colorApp"
+            android:padding="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginHorizontal="@dimen/_80sdp"
+            android:textColorHint="@color/colorWhite"
+            android:fontFamily="@font/dm_medium"
+            android:hint="Get OTP"
+            android:drawablePadding="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <ProgressBar
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:id="@+id/progressbar"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:indeterminateTint="@color/colorApp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

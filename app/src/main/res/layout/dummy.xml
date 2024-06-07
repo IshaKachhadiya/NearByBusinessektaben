@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_margin="@dimen/_7sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_productName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:fontFamily="@font/dm_regular"
+                android:text="Product : Man Clothes"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_productName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dm_regular"
+                android:text="Product : Man Clothes"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintStart_toStartOf="@+id/tv_productName"
+                app:layout_constraintTop_toBottomOf="@+id/tv_productName" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_productName1">
+
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_admin_placeholder" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:includeFontPadding="false"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:id="@+id/tv_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:fontFamily="@font/dm_medium"
+                android:text="Paras Patel sdfsdfsdfgggg       c          cfvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvcvcvcvggggggggggggggg"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_phone_num"
+                app:layout_constraintEnd_toStartOf="@+id/iv_call"
+                app:layout_constraintStart_toEndOf="@+id/card_img"
+                app:layout_constraintTop_toBottomOf="@+id/tv_productName1"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/tv_phone_num"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dm_regular"
+                android:text="Mobile No. : +91 90120sdgv bn nnnnnnnnnnnbnbnbbnfvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/card_img"
+                app:layout_constraintEnd_toEndOf="@+id/tv_username"
+                app:layout_constraintStart_toStartOf="@+id/tv_username"
+                app:layout_constraintTop_toBottomOf="@+id/tv_username" />
+
+
+            <ImageView
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:id="@+id/iv_call"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_call"
+                app:layout_constraintBottom_toBottomOf="@+id/card_img"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/card_img" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

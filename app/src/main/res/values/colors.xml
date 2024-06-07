@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorGreen">#117800</color>
+    <color name="colorBlack">#FF000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="colorApp">#009BB3</color>
+    <color name="colorAppLight">#7B8298</color>
+    <color name="colorSearch">#7B8298</color>
+</resources>
